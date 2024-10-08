@@ -20,7 +20,7 @@ const VocabularyNavigations = ({
     >
       {/* <!-- SIDEBAR HEADER --> */}
       <div className="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
-        <NavLink to="/vocabulary">
+        <NavLink to="/vocabulary/norman/contents">
           <h1>Vocabulary</h1>
         </NavLink>
 
@@ -64,11 +64,11 @@ const VocabularyNavigations = ({
                 { link: '/vocabulary/norman/contents', name: 'contents' },
                 { link: '/vocabulary/norman/mission', name: 'mission' },
                 { link: '/vocabulary/norman/sessions', name: 'sessions' },
-                { link: '/vocabulary/norman/usage', name: 'usage' },
+                { link: '/vocabulary/norman/descriptions', name: 'Descriptions' },
+                { link: '/vocabulary/norman/usages', name: 'usages' },
                 { link: '/vocabulary/norman/working', name: 'working' },
                 { link: '/vocabulary/norman/recalling', name: 'recalling' },
                 { link: '/vocabulary/norman/understanding', name: 'understanding' },
-                { link: '/vocabulary/norman/descriptions', name: 'Descriptions' },
                 
               ].map((item) => {
                 return (
