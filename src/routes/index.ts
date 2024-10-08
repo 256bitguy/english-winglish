@@ -10,7 +10,7 @@ const Tables = lazy(() => import('../pages/Tables'));
 const Alerts = lazy(() => import('../pages/UiElements/Alerts'));
 const Buttons = lazy(() => import('../pages/UiElements/Buttons'));
 
-import { Contents,Recalling,Mission,SessionWords,Sessions,Understanding } from '../pages/Vocabulary';
+import { Contents,Recalling,Mission,SessionWords,Sessions,Understanding,Descriptions } from '../pages/Vocabulary';
 
 const coreRoutes = [
   {
@@ -43,6 +43,11 @@ const coreRoutes = [
     path: '/vocabulary/norman/recalling',
     title: 'recalling',
     component: Recalling,
+  },
+  {
+    path: '/vocabulary/norman/descriptions',
+    title: 'recalling',
+    component: Descriptions,
   },
   {
     path: '/profile',

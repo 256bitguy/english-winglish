@@ -1,10 +1,13 @@
 import React from 'react';
 
-const CircularProgress = ({percentage}:number) => {
-  // Calculate strokeDashoffset based on the percentage
+interface CircularProgressProps{
+  percentage:number;
+}
+const CircularProgress:React.FC<CircularProgressProps>= ({percentage}) => {
+ 
   
-  const radius = 16; // Radius of the circle
-  const normalizedRadius = radius - 2; // Adjust for stroke width
+  const radius = 16;  
+  const normalizedRadius = radius - 2;  
   const circumference = normalizedRadius * 2 * Math.PI;
   const strokeDashoffset = circumference - (percentage / 100) * circumference;
 

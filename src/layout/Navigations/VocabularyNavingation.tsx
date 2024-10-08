@@ -68,6 +68,7 @@ const VocabularyNavigations = ({
                 { link: '/vocabulary/norman/working', name: 'working' },
                 { link: '/vocabulary/norman/recalling', name: 'recalling' },
                 { link: '/vocabulary/norman/understanding', name: 'understanding' },
+                { link: '/vocabulary/norman/descriptions', name: 'Descriptions' },
                 
               ].map((item) => {
                 return (
