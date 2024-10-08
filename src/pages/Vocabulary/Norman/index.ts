@@ -6,3 +6,7 @@ export {Sessions} from './Sessions'
 export {Understanding} from './Understanding'
 export {Descriptions} from './Descriptions'
 export {Usages} from './Usages'
+export {Using} from './Using'
+export {Working} from './Working'
+
+export {VocabRoutes} from './VocabRoutes'

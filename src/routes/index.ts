@@ -10,50 +10,15 @@ const Tables = lazy(() => import('../pages/Tables'));
 const Alerts = lazy(() => import('../pages/UiElements/Alerts'));
 const Buttons = lazy(() => import('../pages/UiElements/Buttons'));
 
-import { Contents,Recalling,Mission,SessionWords,Sessions,Understanding,Descriptions, Usages } from '../pages/Vocabulary';
-
+// import { Contents,Recalling,Mission,SessionWords,Sessions,Understanding,Descriptions, Usages, Using, Working } from '../pages/Vocabulary';
+import { VocabRoutes } from '../pages/Vocabulary';
 const coreRoutes = [
   {
     path: '/calendar',
     title: 'Calender',
     component: Calendar,
   },
-  {
-    path: '/vocabulary/norman/contents',
-    title: 'vocabulary',
-    component: Contents,
-  },
-  {
-    path: '/vocabulary/norman/mission',
-    title: 'Missino',
-    component: Mission,
-  },{
-    path: '/vocabulary/norman/sessionWords',
-    title: 'sessionWords',
-    component: SessionWords,
-  },{
-    path: '/vocabulary/norman/sessions',
-    title: 'sessions',
-    component: Sessions,
-  },{
-    path: '/vocabulary/norman/understanding',
-    title: 'understanding',
-    component: Understanding,
-  },{
-    path: '/vocabulary/norman/recalling',
-    title: 'recalling',
-    component: Recalling,
-  },
-  {
-    path: '/vocabulary/norman/descriptions',
-    title: 'recalling',
-    component: Descriptions,
-  },
-  {
-    path: '/vocabulary/norman/usages',
-    title: 'recalling',
-    component: Usages,
-  },
+ ...VocabRoutes,
   {
     path: '/profile',
     title: 'Profile',
